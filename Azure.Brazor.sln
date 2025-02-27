@@ -5,6 +5,12 @@ VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.AzureCosmosDb.Demo", "Blazor.AzureCosmosDb.Demo\Blazor.AzureCosmosDb.Demo.csproj", "{1000DE91-2A67-4489-B5BD-F05C86808A78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.CosmosDb", "Azure.CosmosDb\Azure.CosmosDb.csproj", "{ED0080C0-04B2-4368-AED0-EE5279DF19C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.ComsoDB.Woring", "Azure.ComsoDB.Woring\Azure.ComsoDB.Woring.csproj", "{A18878BC-3F17-4FD9-9852-32CE92E7C6AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.StorageAccount.Demo", "MVC.StorageAccount.Demo\MVC.StorageAccount.Demo.csproj", "{CECA4823-9E9A-4763-BB10-40940DDB9BFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{1000DE91-2A67-4489-B5BD-F05C86808A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1000DE91-2A67-4489-B5BD-F05C86808A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1000DE91-2A67-4489-B5BD-F05C86808A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0080C0-04B2-4368-AED0-EE5279DF19C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0080C0-04B2-4368-AED0-EE5279DF19C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0080C0-04B2-4368-AED0-EE5279DF19C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0080C0-04B2-4368-AED0-EE5279DF19C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18878BC-3F17-4FD9-9852-32CE92E7C6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18878BC-3F17-4FD9-9852-32CE92E7C6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18878BC-3F17-4FD9-9852-32CE92E7C6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18878BC-3F17-4FD9-9852-32CE92E7C6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CECA4823-9E9A-4763-BB10-40940DDB9BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECA4823-9E9A-4763-BB10-40940DDB9BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECA4823-9E9A-4763-BB10-40940DDB9BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECA4823-9E9A-4763-BB10-40940DDB9BFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
