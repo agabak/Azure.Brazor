@@ -12,6 +12,7 @@
 <table class="table">
     <thead>
         <tr>
+            <th>Avatar</th>
             <th>
                 @Html.DisplayNameFor(model => model.FirstName)
             </th>
@@ -31,6 +32,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                <img src="@item.ImageName" width="50" height="50" />
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.FirstName)
             </td>   
             <td>
@@ -43,14 +47,15 @@
                 @Html.DisplayFor(modelItem => item.Industry)
             </td>
             <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.RowKey, industry = item.Industry, }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.RowKey, industry = item.Industry }) |
+               @Html.ActionLink("Edit", "Edit", new { id = item.RowKey, industry = item.Industry }) |
+               @Html.ActionLink("Details", "Details", new { id = item.RowKey, industry = item.Industry }) |
+               <form asp-action="Delete">
+                   <input type="hidden" value="@item.RowKey" name="id" />
+                   <input type="hidden" value="@item.Industry" name="industry" />
+                   <input type="submit" value="Delete" class="btn btn-danger" />
+               </form>
                  
-                    <form asp-action="Delete">
-                        <input type="hidden" value="@item.RowKey" name="id" />
-                        <input type="hidden" value="@item.Industry" name="industry" />
-                        <input type="submit" value="Delete" class="btn btn-danger" />
-                    </form>
+                    
             </td>
         </tr>
 }

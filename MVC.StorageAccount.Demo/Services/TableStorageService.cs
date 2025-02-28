@@ -9,14 +9,9 @@ namespace MVC.StorageAccount.Demo.Services;
 public class TableStorageService : ITableStorageService
 {
     private readonly TableClient _tableClient;
-    public TableStorageService(IOptions<AccountStorageSettings> options)
+    public TableStorageService(TableClient tableClient)
     {
-        ArgumentNullException.ThrowIfNull(options);
-        ArgumentNullException.ThrowIfNull(options.Value.StorageAccountConnetionString);
-        ArgumentNullException.ThrowIfNullOrEmpty(options.Value.TableName);
-
-        var serviceClient = new TableServiceClient(options.Value.StorageAccountConnetionString);
-        _tableClient = serviceClient.GetTableClient(options.Value.TableName);
+        _tableClient = tableClient;
     }
 
     public async Task<AttendeeEntity> GetAttendeeAsync(string key, string id)
